@@ -23,6 +23,6 @@ public class OknoWindow extends JFrame{
     }
 
     public static void main(String[] args) {
-        OknoWindow okno = new OknoWindow();
+        OknoWindow okienko = new OknoWindow();
     }
 }
