@@ -17,7 +17,7 @@ public class OknoWindow extends JFrame{
     private JButton choose;
     private JLabel notif;
 
-    private int money;
+    private double money;
 
     public OknoWindow(){
         setContentPane(panel);
@@ -27,7 +27,7 @@ public class OknoWindow extends JFrame{
         setVisible(true);
 
         deposit.addActionListener(e -> {
-            money += Integer.parseInt(amount.getText());
+            money += Double.parseDouble(amount.getText());
             inValue.setText(money + "zł");
             balanceValue.setText("" + money);
             notif.setText(notif.getText() + "Wpłacono " + money + "zł");
